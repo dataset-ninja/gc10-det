@@ -29,16 +29,24 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/gc10-det"
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://www.kaggle.com/datasets/alex000kim/gc10det/download?datasetVersionNumber=1"
+DOWNLOAD_ORIGINAL_URL: Optional[
+    Union[str, dict]
+] = "https://www.kaggle.com/datasets/alex000kim/gc10det/download?datasetVersionNumber=1"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
-PAPER: Optional[str] = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7146379/pdf/sensors-20-01562.pdf"
+PAPER: Optional[
+    str
+] = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7146379/pdf/sensors-20-01562.pdf"
 CITATION_URL: Optional[str] = "https://www.kaggle.com/datasets/alex000kim/gc10det"
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "The State Key Lab of Precision Measuring Technology and Instruments, Tianjin University"
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = r"https://www.tsinghua.edu.cn/dpien/info/1092/1039.htm#:~:text=03%20Views%3A%20954-,The%20State%20Key%20Laboratory%20of%20Precision%20Measurement%20Technology%20and%20Instruments,to%20the%20public%20in%201995."
+ORGANIZATION_NAME: Optional[
+    Union[str, List[str]]
+] = "The State Key Lab of Precision Measuring Technology and Instruments, Tianjin University"
+ORGANIZATION_URL: Optional[
+    Union[str, List[str]]
+] = r"https://www.tsinghua.edu.cn/dpien/info/1092/1039.htm#:~:text=03%20Views%3A%20954-,The%20State%20Key%20Laboratory%20of%20Precision%20Measurement%20Technology%20and%20Instruments,to%20the%20public%20in%201995."
 TAGS: List[str] = None
 
 ##################################
@@ -47,7 +55,7 @@ TAGS: List[str] = None
 
 
 def check_names():
-    fields_before_upload = [PROJECT_NAME] # PROJECT_NAME_FULL
+    fields_before_upload = [PROJECT_NAME]  # PROJECT_NAME_FULL
     if any([field is None for field in fields_before_upload]):
         raise ValueError("Please fill all fields in settings.py before uploading to instance.")
 
@@ -63,11 +71,11 @@ def get_settings():
         "homepage_url": HOMEPAGE_URL,
         "preview_image_id": PREVIEW_IMAGE_ID,
         "github_url": GITHUB_URL,
-    
-    name_full = settings.pop("project_name_full", None)
+    }
+
     if any([field is None for field in settings.values()]):
         raise ValueError("Please fill all fields in settings.py after uploading to instance.")
-   
+
     settings["project_name_full"] = PROJECT_NAME_FULL
     settings["download_original_url"] = DOWNLOAD_ORIGINAL_URL
     settings["class2color"] = CLASS2COLOR
