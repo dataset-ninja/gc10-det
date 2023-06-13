@@ -5,40 +5,40 @@ from dataset_tools.templates import AnnotationType, CVTask, Industry, License
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: Optional[str] = None
+PROJECT_NAME: str = "GC10-DET"
+PROJECT_NAME_FULL: Optional[str] = "GC10-DET: Metallic surface defect detection"
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-INDUSTRIES: List[Industry] = None
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+LICENSE: License = License.CC_BY_4_0()
+INDUSTRIES: List[Industry] = [Industry.Manufacturing()]
+CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
 
-RELEASE_YEAR: int = None
-HOMEPAGE_URL: str = None
+RELEASE_YEAR: int = 2020
+HOMEPAGE_URL: str = "https://www.kaggle.com/datasets/alex000kim/gc10det"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = None
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/gc10-det"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://www.kaggle.com/datasets/alex000kim/gc10det/download?datasetVersionNumber=1"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
-PAPER: Optional[str] = None
-CITATION_URL: Optional[str] = None
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+PAPER: Optional[str] = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7146379/pdf/sensors-20-01562.pdf"
+CITATION_URL: Optional[str] = "https://www.kaggle.com/datasets/alex000kim/gc10det"
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "The State Key Lab of Precision Measuring Technology and Instruments, Tianjin University"
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = r"https://www.tsinghua.edu.cn/dpien/info/1092/1039.htm#:~:text=03%20Views%3A%20954-,The%20State%20Key%20Laboratory%20of%20Precision%20Measurement%20Technology%20and%20Instruments,to%20the%20public%20in%201995."
 TAGS: List[str] = None
 
 ##################################
