@@ -13,4 +13,4 @@ import dataset_tools as dtools
 
 dtools.download(dataset='GC10-DET', dst_path='~/dtools/datasets/GC10-DET.tar')
 ```
-The data in original format can be 🔗[downloaded here.](https://www.kaggle.com/datasets/alex000kim/gc10det/download?datasetVersionNumber=1)
+The data in original format can be 🔗[downloaded here](https://www.kaggle.com/datasets/alex000kim/gc10det/download?datasetVersionNumber=1)
