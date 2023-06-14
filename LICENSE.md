@@ -1,0 +1,1 @@
+GC10-DET: Metallic surface defect detection is under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.
