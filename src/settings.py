@@ -6,7 +6,7 @@ from dataset_tools.templates import AnnotationType, CVTask, Industry, License
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "GC10-DET"
-PROJECT_NAME_FULL: Optional[str] = "GC10-DET: Metallic surface defect detection"
+PROJECT_NAME_FULL: Optional[str] = "GC10-DET: Metallic Surface Defect Detection"
 
 ##################################
 # * After uploading to instance ##

@@ -1,4 +1,4 @@
-**GC10-DET: Metallic surface defect detection** is a dataset for object detection tasks. It is used in the manufacturing industry.
+**GC10-DET: Metallic Surface Defect Detection** is a dataset for object detection tasks. It is used in the manufacturing industry.
 
 The dataset consists of 2300 images with 3563 labeled objects belonging to 10 different classes including *silk_spot*, *welding_line*, *punching_hole*, and other: *water_spot*, *crescent_gap*, *oil_spot*, *inclusion*, *waist folding*, *crease*, and *rolled_pit*.
 
