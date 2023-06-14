@@ -4,6 +4,6 @@ The dataset consists of 2300 images with 3563 labeled objects belonging to 10 di
 
 Each image in the GC10-DET dataset has bounding boxes annotations. There are 8 (0% of the total) unlabeled images (i.e. without annotations). There is 1 split in the dataset: *ds0* (2300 images). The dataset was released in 2020 by the [The State Key Lab of Precision Measuring Technology and Instruments, Tianjin University](https://www.tsinghua.edu.cn/dpien/info/1092/1039.htm#:~:text=03%20Views%3A%20954-,The%20State%20Key%20Laboratory%20of%20Precision%20Measurement%20Technology%20and%20Instruments,to%20the%20public%20in%201995.).
 
-Here are the visualized examples for each of the 10 classes:
+Here is the visualized example grid with annotations:
 
-[Dataset classes](https://github.com/dataset-ninja/gc10-det/raw/main/visualizations/classes_preview.webm)
+<img src="https://github.com/dataset-ninja/gc10-det/raw/main/visualizations/horizontal_grid.png">
