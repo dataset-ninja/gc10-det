@@ -4,10 +4,10 @@ import os
 import sys
 
 import supervisely as sly
-from dataset_tools import ProjectRepo
 from dotenv import load_dotenv
 
 import src.settings as s
+from dataset_tools import ProjectRepo
 from src.convert import convert_and_upload_supervisely_project
 
 PARENT_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
@@ -68,6 +68,6 @@ if __name__ == "__main__":
 
     # * Optional parameter preview_class should be passed if needed:
     # * Literal["ClassesPreview", "HorizontalGrid", "SideAnnotationsGrid"]
-    project_repo.build_texts(force=force_texts)
+    project_repo.build_texts(force=force_texts, preview_class="HorizontalGrid")
 
     sly.logger.info("Script finished.")
