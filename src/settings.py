@@ -34,7 +34,18 @@ DOWNLOAD_ORIGINAL_URL: Optional[
 ] = "https://www.kaggle.com/datasets/alex000kim/gc10det/download?datasetVersionNumber=1"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "punching_hole": [230, 25, 75],
+    "welding_line": [255, 225, 25],
+    "crescent_gap": [0, 130, 200],
+    "water_spot": [245, 130, 48],
+    "oil_spot": [145, 30, 180],
+    "silk_spot": [70, 240, 240],
+    "inclusion": [240, 50, 230],
+    "rolled_pit": [210, 245, 60],
+    "crease": [250, 190, 212],
+    "waist folding": [0, 128, 128]
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 PAPER: Optional[
