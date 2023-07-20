@@ -22,7 +22,7 @@ PROJECT_NAME_FULL: Optional[str] = "GC10-DET: Metallic Surface Defect Detection"
 LICENSE: License = License.CC_BY_4_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [
     Domain.Industrial(),
-    Research.DefectDetection(),
+    Research.SurfaceDefectDetection(),
 ]
 CATEGORY: Category = Category.Manufacturing()
 
@@ -60,7 +60,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = {
     "inclusion": [240, 50, 230],
     "rolled_pit": [210, 245, 60],
     "crease": [250, 190, 212],
-    "waist folding": [0, 128, 128]
+    "waist folding": [0, 128, 128],
 }
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
