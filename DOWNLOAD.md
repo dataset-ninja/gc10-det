@@ -1,4 +1,4 @@
-Dataset **GC10-DET** can be downloaded in Supervisely format:
+Dataset **GC10-DET** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
  [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/V/7/Ka/XH4YwBZOVaQA9zFLTv1FkLIX8hBPK4DMx16qky6d34b0gu7ZUgnFrwb4dnYSkmcsIQMW2rBY7O73A93gCgoGNUxj2OBNPaHojny9bQTYHk9KsztIyNO5AE9HEODU.tar)
 
@@ -11,6 +11,8 @@ pip install --upgrade dataset-tools
 ``` python
 import dataset_tools as dtools
 
-dtools.download(dataset='GC10-DET', dst_path='~/dtools/datasets/GC10-DET.tar')
+dtools.download(dataset='GC10-DET', dst_dir='~/dataset-ninja/')
 ```
-The data in original format can be 🔗[downloaded here](https://www.kaggle.com/datasets/alex000kim/gc10det/download?datasetVersionNumber=1)
+Make sure not to overlook the [python code example](https://developer.supervisely.com/getting-started/python-sdk-tutorials/iterate-over-a-local-project) available on the Supervisely Developer Portal. It will give you a clear idea of how to effortlessly work with the downloaded dataset.
+
+The data in original format can be [downloaded here](https://www.kaggle.com/datasets/alex000kim/gc10det/download?datasetVersionNumber=1)

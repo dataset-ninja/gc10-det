@@ -4,4 +4,6 @@ The dataset consists of 2300 images with 3563 labeled objects belonging to 10 di
 
 Images in the GC10-DET dataset have bounding box annotations. There are 8 (0% of the total) unlabeled images (i.e. without annotations). There are no pre-defined `<i>`train/val/test `</i>` splits in the dataset. The dataset was released in 2020 by the Tianjin University, China.
 
-<img src="https://github.com/dataset-ninja/gc10-det/raw/main/visualizations/poster.png">
+Here is the visualized example grid with annotations:
+
+<img src="https://github.com/dataset-ninja/gc10-det/raw/main/visualizations/horizontal_grid.png">
