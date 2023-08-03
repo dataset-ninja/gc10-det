@@ -1,0 +1,23 @@
+ **C10-DET** is a dataset for large-scale metallic surface defect detection which has great challenges on defect categories, image number, and data scale.
+
+The adverse impact of surface defects on the quality of industrial products necessitates efficient metallic defect detection to meet industry-defined quality requirements. This has led to an increasing interest in metallic surface defect detection, resulting in significant improvements in quality control for industrial applications. However, detecting metallic surface defects is a challenging task, mainly due to environmental factors such as illumination, light reflection, and the properties of metal materials. These factors greatly increase the complexity of surface defect detection.
+
+Existing defect datasets are limited in terms of data scale and defect diversity, often containing only a few categories. The small dataset size can result in detection models with weak robustness and limited generalization capabilities, especially when dealing with complex industrial scenarios. To address this issue and provide a benchmark that closely resembles realistic scenarios, the authors constructed a new dataset called **GC10-DET.**
+
+The data collection system utilized a set of linear array CCD cameras equipped with a direct current (DC) light source to eliminate the presence of alternating current (AC) stripes. For certain production lines, like hot-rolled strip production lines, which achieve speeds of up to 10 m/s, high-speed linear CCD cameras were used to improve detection speed and image resolution. In the case of wide-format steel plates, 4096-pixel line scan CCD cameras were stitched together to capture complete images. The captured steel plate images were then transmitted to a server with ample computing resources for defect detection. The results were output to the console for quality control.
+
+The authors provided detailed information about the brands, parameters, and types of equipment used for data collection. The cameras used were Teledyne DALSA LA-CM-04K08A models, equipped with Moritex ML-3528-43F lenses, and had a pixel size of 7.04 µm × 7.04 µm. The server utilized 32GB of running memory and NVIDIA RTX 2082ti GPU cards.
+
+Each defect type is described in detail, explaining how it appears on the steel strip surface and the reasons behind its occurrence:
+
+* *Punching*: In the production line of the strip, the steel strip needs to be punched according to the product specifications; mechanical failure may lead to unwanted punching, resulting in punching
+  defects.
+* *Welding line*: When the strip is changed, it is necessary to weld the two coils of the strip, and the weld line is produced. Strictly speaking, this is not a defect, but it needs to be automatically detected and tracked to be circumvented in subsequent cuts.
+* *Crescent gap*: In the production of steel strip, cutting sometimes results in defects, just like half a circle.
+* *Water spot*: A water spot is produced by drying in production. Under different products and processes, the requirements for this defect are different. However, because the water spots are generally with low contrast, and are similar to other defects such as oil spots, they are usually detected by mistake.
+* *Oil spot*: An oil spot is usually caused by the contamination of mechanical lubricant, which will affect the appearance of the product.
+* *Silk spot*: A local or continuous wave-like plaque on a strip surface that may appear on the upper and lower surfaces, and the density is uneven in the whole strip length direction. Generally, the main reason lies in the uneven temperature of the roller and uneven pressure.
+* *Inclusion*: Inclusion is a typical defect of metal surface defects, usually showing small spots, fish scale shape, strip shape, block irregular distribution in the strip of the upper and lower surface (global or local), and is often accompanied by rough pockmarked surfaces. Some inclusions are loose and easy to fall off and some are pressed into the plate.
+* *Rolled pit*: Rolled pits are periodic bulges or pits on the surface of a steel plate that are punctate, flaky, or strip-like. They are distributed throughout the strip length or section, mainly caused by work roll or tension roll damage.
+* *Crease*: A crease is a vertical transverse fold, with regular or irregular spacing across the strip, or at the edge of the strip. The main reason is the local yield along the moving direction of the strip in the uncoiling process.
+* *Waist folding*: There are obvious folds in the defect parts, a little more popular, a little like wrinkles, indicating that the local deformation of the defect is too large. The reason is due to low-carbon.

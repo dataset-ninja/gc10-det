@@ -20,10 +20,7 @@ PROJECT_NAME_FULL: Optional[str] = "GC10-DET: Metallic Surface Defect Detection"
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC_BY_4_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [
-    Domain.Industrial(),
-    Research.SurfaceDefectDetection(),
-]
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Domain.SurfaceDefectDetection()]
 CATEGORY: Category = Category.Manufacturing()
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
@@ -67,7 +64,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = {
 PAPER: Optional[
     str
 ] = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7146379/pdf/sensors-20-01562.pdf"
-CITATION_URL: Optional[str] = "https://www.kaggle.com/datasets/alex000kim/gc10det"
+CITATION_URL: Optional[str] = None
 AUTHORS: Optional[List[str]] = ["Xiaoming Lv", "Fajie Duan", "Jia-jia Jiang", "Xiao Fu", "Lin Gan"]
 
 ORGANIZATION_NAME: Optional[
