@@ -10,8 +10,7 @@ The authors provided detailed information about the brands, parameters, and type
 
 Each defect type is described in detail, explaining how it appears on the steel strip surface and the reasons behind its occurrence:
 
-* *Punching*: In the production line of the strip, the steel strip needs to be punched according to the product specifications; mechanical failure may lead to unwanted punching, resulting in punching
-  defects.
+* *Punching*: In the production line of the strip, the steel strip needs to be punched according to the product specifications; mechanical failure may lead to unwanted punching, resulting in punching defects.
 * *Welding line*: When the strip is changed, it is necessary to weld the two coils of the strip, and the weld line is produced. Strictly speaking, this is not a defect, but it needs to be automatically detected and tracked to be circumvented in subsequent cuts.
 * *Crescent gap*: In the production of steel strip, cutting sometimes results in defects, just like half a circle.
 * *Water spot*: A water spot is produced by drying in production. Under different products and processes, the requirements for this defect are different. However, because the water spots are generally with low contrast, and are similar to other defects such as oil spots, they are usually detected by mistake.
