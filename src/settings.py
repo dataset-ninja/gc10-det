@@ -67,9 +67,7 @@ PAPER: Optional[
 CITATION_URL: Optional[str] = None
 AUTHORS: Optional[List[str]] = ["Xiaoming Lv", "Fajie Duan", "Jia-jia Jiang", "Xiao Fu", "Lin Gan"]
 
-ORGANIZATION_NAME: Optional[
-    Union[str, List[str]]
-] = "The State Key Lab of Precision Measuring Technology and Instruments, Tianjin University, China"
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Tianjin University, China"
 ORGANIZATION_URL: Optional[
     Union[str, List[str]]
 ] = r"https://www.tsinghua.edu.cn/dpien/info/1092/1039.htm#:~:text=03%20Views%3A%20954-,The%20State%20Key%20Laboratory%20of%20Precision%20Measurement%20Technology%20and%20Instruments,to%20the%20public%20in%201995."
