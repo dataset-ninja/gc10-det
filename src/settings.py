@@ -20,7 +20,7 @@ HIDE_DATASET = False  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.CC_BY_4_0()
+LICENSE: License = License.CC_BY_4_0(source_url="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7146379/pdf/sensors-20-01562.pdf")
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Domain.SurfaceDefectDetection()]
 CATEGORY: Category = Category.Manufacturing()
 
