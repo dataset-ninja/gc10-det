@@ -65,8 +65,11 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = {
 PAPER: Optional[
     str
 ] = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7146379/pdf/sensors-20-01562.pdf"
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets"}
+
 CITATION_URL: Optional[str] = None
 AUTHORS: Optional[List[str]] = ["Xiaoming Lv", "Fajie Duan", "Jia-jia Jiang", "Xiao Fu", "Lin Gan"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["fjduan@tju.edu.cn"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Tianjin University, China"
 ORGANIZATION_URL: Optional[
@@ -116,6 +119,8 @@ def get_settings():
     settings["paper"] = PAPER
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS    
+    settings["repository"] = REPOSITORY    
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
