@@ -1,6 +1,6 @@
 Dataset **GC10-DET** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzEwMDhfR0MxMC1ERVQvZ2MxMC1kZXQtRGF0YXNldE5pbmphLnRhciIsICJzaWciOiAiS3JGOFYzSllPOXV4TXk0dFIzdHJMb01ORGU5R2wzKzMyQVY2UmRKUmVQVT0ifQ==)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogInMzOi8vc3VwZXJ2aXNlbHktZGF0YXNldHMvMTAwOF9HQzEwLURFVC9nYzEwLWRldC1EYXRhc2V0TmluamEudGFyIiwgInNpZyI6ICJaM2JTWlhTcE9TQjVONFRWVklLWG1IWGR2NTNQbWJGZG1vUFJWSXlIZlI4PSJ9?response-content-disposition=attachment%3B%20filename%3D%22gc10-det-DatasetNinja.tar%22)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
